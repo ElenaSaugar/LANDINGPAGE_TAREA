@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Lora:ital,wght@1,600&display=swap');
+*{
+
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.body1{
+    background-image: url(IMG/vista-cenital-teclado-rosa-copyspace\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family:'Lora', serif;
+    margin:0px;
+    padding: 0px;
+    
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+   
+}
+header .logo{
+    color: aliceblue;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #EF478E;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
+}
+header .logo:hover{
+    color: #2DD0D8;
+    background-color: aliceblue;
+    transition: 1s;
+}
+header .navbar{
+    position: relative;
+    display: flex;
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    padding: 15px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase ;
+   
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid #EF478E;
+    padding: 2px;
+}
+#toggle-menu{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+
+/*responsive del menu*/
+@media (max-width: 576px) {
+    header .navbar {
+        display: none;
+    }
+
+    header input[type="checkbox"]:target ~ .navbar {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #EF478E;
+        padding: 10px 0;
+    }
+    .desarrolladora{
+        visibility: hidden;
+    }
+
+    header .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .navbar li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header .navbar li a {
+        padding: 10px;
+        color: #FFF;
+        text-decoration: none;
+    }
+    .redesSociales {
+        text-align: center;
+    }
+
+    .redesSociales li {
+        margin: 0 5px;
+    }
+    
+}
+  @media (max-width: 992px) {
+    header .navbar {
+      display: none;
+    }
+    .redesSociales li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+  }
+  
+
+
+
+/*contenido de la web*/
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.contenido .tituloBox{
+    position: relative;
+  
+    text-align: center;
+}
+.contenido .tituloBox h2{
+  
+    text-transform: uppercase;
+    color: #EF478E;
+}
+.desarrolladora{
+    background-color: #F6DDED;
+    color: aliceblue;
+    border-radius: 70px;
+    font-size: 3.2em;
+}
+.contenido .tituloBox h2 span{
+    background-color: #48B4DF; 
+    color: aliceblue;
+    font-family: 'Kalam', cursive;
+    font-weight: 500;
+    border-radius: 20px;
+font-size: 2em;
+}
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #C52D8F;
+    font-family: 'Kalam', cursive;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#48B4DF;
+    background-color: aliceblue;
+    padding: 10px 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.contenido .tituloBox a:hover{
+    color: aliceblue;
+    background-color:#48B4DF;
+    transition: 0.5s;
+}
+.contenido .imgBox{
+    width: 650px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+.contenido .imgBox img{
+    height: 80vh;
+}
+.contenido .imgBox img:hover{
+    height: 80vh;
+}
+
+/*copyright*/
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    color: black;
+    text-align: center;
+    margin-left: 180px;
+}
+.frase{
+    margin: 0;
+}
+/*Redes sociales*/
+.redesSociales{
+    position: absolute;
+    left: 80%;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    list-style: none;
+}
+.resdesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+color: #48B4DF;
+font-size: 2.8em;
+transition: 0.3s;
+padding: 10px;
+}
+.redesSociales li:hover a{
+    color: white;
+}
+/************************************************/
+/*circulo*/
+.circulo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: pink;
+    clip-path: circle(700px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;   
+}
+
+
+
+
+/*parte CV*/
+.foto{
+    width: 210px;
+    height: 160px;
+    border-radius: 90px;
+    border:solid 2px;
+    margin: 10px;
+}
+.nombre{
+    text-align: center;
+}
+.icon{
+    text-align: center;
+}
+.datos{
+    text-align: center;
+    padding: 5px;
+}
+
+.cajagrande{
+    border:solid 0px #fff;
+    border-radius: 22px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+    background-color: #c6e2e9;
+    margin-top: 90px;
+    font-family: 'Quicksand', sans-serif;
+}
+fieldset{
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+legend{
+    border: solid 1px cornflowerblue;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #F6DDED;
+    border-radius: 5px;
+}
+.bodycv{
+    background: url(IMG/marmol.jpg);
+    
+}
+
+
+
+
+/*parte contacto*/
+
+
+.bodycontacto {
+    background-image: url(IMG/marmol.jpg);
+    color: #CD055D;
+    line-height: 1.6;
+    font-family: 'Crimson Text', serif;
+    padding: 0 1.5em;
+}
+
+.listas {
+    list-style: none;
+    padding: 0;
+}
+.contactaconmigo{
+     width: 60%;
+    margin: auto;
+    
+}
+
+.titul {
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 160px;
+    text-shadow: 0 0 10px #95657A;
+}
+
+.contacto-formulario {
+    background: #85B4B4;
+    border-radius: 10px;
+    box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.contacto-formulario form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-formulario form label {
+    display: block;
+    font-size: 20px;
+}
+
+.contacto-formulario form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto-formulario form .botoncontacto {
+    /*para que el botón ocupe todo*/
+    grid-column: 1 / 3;
+}
+
+.contacto-formulario form button,
+.contacto-formulario form input,
+.contacto-formulario form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #CA39BF;
+}
+
+.contacto-formulario form button {
+    background: #E477B9;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contacto-formulario form button:hover {
+    background: #52A0E5;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+/*parte proyectos destacados*/
+
+.bodyproyectos{
+    background-image: url(IMG/marmol.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.proy{
+    color: #BC2C6B;
+    text-align: center;
+    font-size: 70px;
+    /*shadow para dar sombreado al texto los 20px es la intensidad*/
+    text-shadow: 0 0 10px #95657A;
+    margin-top: 1.7em;
+}
+.imgs{
+   margin-top: -5em;
+   justify-content: center;
+   align-items: center;
+}
+
+.contproy{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+    justify-items: center;
+}
+/*Estructura de cada componente de la galeria: imagen + descripcion*/
+.contproy div{
+   
+  justify-self: center;
+   
+}
+.contproy div img{
+    width: 400px;
+    height: 260px;
+    box-shadow: 0 0 10px #666;
+    border: 5px solid #fff;
+    text-decoration: none;
+}
+.contproy div img~span{
+    width: 400px;
+    display: block;
+    opacity: 1;
+    margin: 0;
+    padding: 2px 5px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px #666;
+    text-align: center ;
+    
+}
+.contproy div img~span a{
+text-decoration: none;
+color: white;
+}
+
+/*Se muestra la descripcion al posicionar el cursor encima de la imagen*/
+.contproy div:hover+span{
+    opacity: 1;
+}
+/*Se especifica el comportamiento que tendrian las imgs al posicionar el cursor encima del contenedor*/
+.contproy:hover div{
+    opacity: 0.2;
+    transform: scale(0.7);
+    transition: 2s;
+}
+/*Se especifica el comportamiento que tendra la img seleccionada*/
+.contproy:hover div:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/*responsive proyectos destacados*/
+@media (max-width: 576px) {
+    header .navbar {
+      display: none;
+    }
+    
+    header .menu-icon {
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    header .menu-icon:before {
+        /*para agregar un menu de hamburguesa el icono se establece
+        con el valor \2630 que respresenta la hamburguesa*/
+      content: "\2630";
+      font-size: 1.5em;
+      color: #EF478E;
+    }
+    
+    header input[type="checkbox"] {
+      display: none;
+    }
+    
+    header input[type="checkbox"]:checked ~ .navbar {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #EF478E;
+      padding: 10px 0;
+    }
+    
+    header .navbar li {
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+    header .navbar li a {
+      padding: 10px;
+      color: #FFF;
+      text-decoration: none;
+    }
+    
+    .imgs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .imgs .contproy {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .imgs .contproy div {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  
+  @media  (max-width: 992px) {
+    header .navbar li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+  
+
+
+/*parte quien soy hobbies*/
+.rectangulo{
+    background-color: #c6e2e9;
+    text-align: center;
+    color: black;
+    position: absolute;
+    width: 99%;
+    height: 200px;
+   border-radius: 10px;
+   position: absolute;
+   margin-top: 100px;
+}
+.rectangulo h1{
+    font-family: 'Pangolin', cursive;
+}
+.textoquien{
+    justify-content: center;
+    display: flex;
+    font-size: 38px;
+    left: 80%;
+    font-family: 'Pangolin', cursive;
+}
+.bodyquiensoy{
+    background-image: url(IMG/marmol.jpg);
+    font-family: 'Noto Serif', serif;
+    
+}
+.funko{
+position: relative;
+margin-top: 260px;
+height: 340px;
+width: 300px;
+margin-left: 65px;
+
+}
+.texto2{
+    left: 80%;
+    width: 60%;
+    margin-left: 30%;
+    margin-top: -260px;
+    font-size: 25px;
+    font-family: 'Pangolin', cursive;
+    
+}
+
+.flipcards{
+    display: flex;
+    /*propiedades para alinear y ajustar mejor las cartas*/
+    /*para ponerlo en horinzontal*/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  margin-top: -180px;
+}
+.hobbies{
+    color: #BC2C6B;
+    text-align: center;
+   font-size: 3.5em;
+    /*shadow para dar sombreado al texto los 20px es la intensidad*/
+    text-shadow: 0 0 10px #95657A;
+    margin-top: 1.7em;
+    text-decoration: underline;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /*aplicar margenes en resto de cartas*/
+    margin: 50px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*determina si la cara posterior de un elemento va a ser visible frente al usuario
+   la cara posterior de un elemento siempre es un fondo transparente , permitiendo, 
+   cuando es visible, que se muestre una imagen de espejo de la cara frontal
+    tiene la propiedad visible: significa que la cara posterior es visible permitiendo que la cara frontal se muestre invertida
+    hidden significa que la cara posterior no es visible*/
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card .front{
+transform: perspective(600px) rotateY(0deg);
+box-shadow: 0px 5px 10px #000;
+}
+.card .front img{
+position: absolute;
+height: 100%;
+width: 100%;
+/*indica como el contenido de un elemento debera ser redimensionado para ajustarse a su contenedor*/
+object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(0, 0, 0,0.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #fec8d8;
+    padding: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #000;
+}
+.card .back .link{
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+/* responsive quiensoy */
+@media (max-width: 576px) {
+    .rectangulo {
+    visibility: hidden;
+    }
+    
+    .textoquien {
+   visibility: hidden;
+    }
+    
+    .funko {
+     margin-top: 400px;
+
+    }
+    
+    .texto2 {
+    visibility: hidden;
+    }
+    
+    .card {
+      width: 250px;
+      height: 300px;
+      margin: 30px;
+    }
+    
+    .card .front h3 {
+      height: 40px;
+      line-height: 40px;
+    }
+    
+    .hobbies {
+      font-size: 2.5em;
+    }
+  }
+  
+
+  @media (max-width: 992px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%; /* Ajusta la posición del menú desplegado */
+        left: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        z-index: 2; /* Añade un valor de z-index mayor */
+      }
+    
+    .menu-icon {
+      display: block;
+    }
+    
+    .navbar li {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .navbar li a {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+  
+
+
